@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#main-menu {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: rgba(150, 147, 147, 0.5);
+    position: sticky;
+    top: 0;
+}
+
+#nav-menu::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left:10px;
+    background: url('../img/logo1.png') no-repeat left;
+    height: 140px; 
+    
+}
+
+#nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 20px, 0px;
+}
+
+#nav-menu>li {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    padding: 8px 25px;
+    z-index: 1;
+
+}
+.active{
+    background-color: black;
+}
+
+
+#header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(43, 42, 42, 0.5);
+    height:465px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#header::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url('../img/yoga-main.jpg') no-repeat center/cover;
+    height: 500px;
+    width:100vw; 
+    z-index: -1;
+    
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    
+}
+#home-pic{
+    width: 40vw;
+   
+}
+
+h1 {
+    font-family: century;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    
+}
+h2{
+    font-family: century;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(138, 137, 137);
+    margin: 40px 0px;
+}
+
+.btnShop{
+    padding: 10px 35px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    outline:none;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.btnShop:hover {
+    background-color: black;
+}
+
+.infor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 0 200px;
+}
+.header2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color:black;
+    margin: 40px 0px;
+}
+.text {
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    color: black;
+    margin: 20px;
+}
+
+.currentWeather {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    margin: 30px 0px;
+
+}
+.weather-picture>img {
+    width: 20vw;
+}
+.weather-location {
+    background-color: rgb(180, 197, 233);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+#list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    margin: 30px 0px;
+    
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    background-color: rgb(white);
+    border: rgb(245, 239, 239) solid 1px;
+    width: 40vw;
+    height: 40vw;
+    margin: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product:hover {
+    background: rgb(211, 209, 194);
+    background: -moz-linear-gradient(top, rgb(250, 250, 248) 0%, rgb(191, 240, 228) 100%);
+    background: -webkit-linear-gradient(top, rgb(250, 250, 248) 0%, rgba(191, 240, 228, 1) 100%);
+    background: linear-gradient(to bottom, rgb(250, 250, 248) 0%, rgba(191, 240, 228, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d3d1c2', endColorstr='#b7ad70', GradientType=0);
+}
+#describe {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   margin: 20px 0;
+}
+
+.product-img>img {
+    width: 25vw;
+    height: 25vw;
+    margin: 0.2vw;
+}
+
+.product-details-img>img {
+    height: 20vw;
+    margin: 0.2vw;
+}
+.product-details-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+#details {
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: 25px;
+   margin: 20px 0;
+}
+
+#product-details-window {
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    height: 80vh;
+    width: 80vh;
+    display: none;
+    background-color: rgba(167, 238, 217, 0.8);
+    border: 3px outset rgb(143, 238, 230, 0.8);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#product-details-close {
+    position: absolute;
+    right: 0.5vw;
+    top: 0.5vh;
+    background-color: rgb(241, 237, 237);
+    border-radius: 4px;
+    color: rgb(10, 10, 10);
+    padding: 0.2vw;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+#product-details-close:hover {
+    color: black;
+}
+#shopping-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cartIcon{
+    width:10vw;
+    margin: 20px 0;
+    
+}

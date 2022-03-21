@@ -1,0 +1,11 @@
+<div id="list">
+    {{#each products}}
+    <div class="product" id="pid-{{id}}" data-id="{{id}}" data-index="{{@index}}">
+        <div class="product-img"><img src="./ast/{{pic}}" /></div>
+        <div id="describe">
+            <div class="product-price">{{price}}</div>
+            <div class="product-name">{{name}}</div>
+        </div>
+    </div>
+    {{/each}}
+</div>

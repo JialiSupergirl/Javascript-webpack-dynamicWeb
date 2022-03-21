@@ -1,0 +1,16 @@
+<div class="miniweather">
+    <div class="miniweather-title">
+        {{options.title}}
+    </div>
+    <div>
+        {{data.name}}
+    </div>
+    <div>
+        {{data.main.temp}} &deg;C
+    </div>
+    <div>
+        {{#each data.weather}}
+        <img src="http://openweathermap.org/img/wn/{{icon}}@2x.png" />
+        {{/each}}
+    </div>
+</div>

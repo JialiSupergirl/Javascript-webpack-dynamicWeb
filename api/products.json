@@ -1,0 +1,48 @@
+{
+    "products": [
+        {
+            "name": "Large exercise mat",
+            "colors": [
+                "Pink",
+                "Blue",
+                "Purple",
+                "Green"
+            ],
+            "pic": "mat.png",
+            "price": "CAD$72.65",
+            "id": 10
+        },
+        {
+            "name": "The Versatile Bag",
+            "colors": [
+                "Red",
+                "Blue"
+            ],
+            "pic": "bag.jpg",
+            "price": "CAD$67.15",
+            "id": 11
+        },
+        {
+            "name": "fitness equipment",
+            "colors": [
+                "Pink",
+                "Blue",
+                "Purple"
+            ],
+            "pic": "equipement.jpg",
+            "price": "CAD$36.90",
+            "id": 12
+        },
+        {
+            "name": "Fitness gym soft ball",
+            "colors": [
+                "Pink",
+                "Blue",
+                "Purple"
+            ],
+            "pic": "ball.jpg",
+            "price": "CAD$31.30",
+            "id": 13
+        }
+    ]
+}

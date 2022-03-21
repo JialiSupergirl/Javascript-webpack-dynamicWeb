@@ -1,0 +1,22 @@
+<div id="shopping-cart">
+    <img src="./ast/shopping-cart.png" id="cartIcon" />
+    {{#each cartData.items}}
+    {{#if product}}
+
+    <div class="product" id="pid-{{id}}" data-id="{{id}}" data-index="{{@index}}">
+        <div class="product-img"><img src="./ast/{{product.pic}}" /></div>
+        <div>
+            <div class="cart-quantity">Quantity:
+                <button class="cart-quantity-mod" data-amount="-1">-</button>
+                <span class="cart-amount">{{quantity}}</span>
+                <button class="cart-quantity-mod" data-amount="1">+</button>
+                {{!-- <button class="cart-quantity-mod" data-amount="1">+10</button> --}}
+            </div>
+            <div class="product-price">{{product.price}}</div>
+            <div class="product-name">{{product.name}}</div>
+            <button class="cart-remove">remove</button>
+        </div>
+    </div>
+    {{/if}}
+    {{/each}}
+</div>

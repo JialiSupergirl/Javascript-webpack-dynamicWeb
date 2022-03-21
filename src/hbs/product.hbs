@@ -1,0 +1,15 @@
+<div class="product-details-details" id="zoomid-{{id}}">
+    <div class="product-details-img"><img src="./ast/{{pic}}" /></div>
+    <div id="details">
+        <div class="product-details-name">{{name}}</div>
+        <div class="product-details-price">{{price}}</div>
+        <div class="product-details-colors">
+            <select>
+                {{#each colors}}
+                <option>{{this}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <button id="product-add" data-id="{{id}}">Add to Cart</button>
+    </div>
+</div>

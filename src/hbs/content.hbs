@@ -1,0 +1,23 @@
+<div class="infor">
+    {{#each content}}
+    <h2 class="header2">{{{header}}}</h2>
+    {{#if img}}
+    <img src="./ast/{{img}}" id="home-pic" />
+    {{/if}}
+    <p class="text">{{{text}}}</p>
+    {{#if button}}
+    <button class="btnShop">{{button}}</button>
+    {{/if}}
+    {{#if locations}}
+    <div class="currentWeather">
+        {{#each locations}}
+        <div id="weather-{{id}}" class="weather-div">
+            <div class="weather-picture"><img src="./ast/{{pic}}"></div>
+            <div class="weather-location" data-lat="{{lat}}" data-lon="{{lon}}"></div>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+
+    {{/each}}
+</div>
